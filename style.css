@@ -100,7 +100,17 @@ body {
   max-width:800px;
   margin:25px auto;
 }
-header, #content, footer { 
+#header {
+  background: rgba(0,0,0,.8); 
+  padding:25px;
+  color:#FFFFFF; 
+}
+
+.logo {
+  height: 30px; /* puoi modificare in 30px o 50px se vuoi */
+  margin-right: 1rem;
+}
+#content, footer { 
   background: rgba(0,0,0,.8); 
   padding:25px;
   color:#FFFFFF; 
