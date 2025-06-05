@@ -107,7 +107,7 @@ body {
 }
 
 .logo {
-  height: 50px; /* puoi modificare in 30px o 50px se vuoi */
+  height: 60px; /* puoi modificare in 30px o 50px se vuoi */
   margin-right: 1rem;
 }
 #content, footer { 
