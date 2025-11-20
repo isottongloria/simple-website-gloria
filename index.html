@@ -27,26 +27,28 @@
   <li><a href="#experience">experience</a></li>
   <li><a href="#portfolio">portfolio</a></li>
   <li><a href="#contact">contact</a></li>
+  <li><a href="#quiz">quiz</a></li>
 </ul>
 
 <div id="container">
   <div class="inner">
     <div id="content">
 
+      <!-- HOME SECTION -->
       <div id="home" class="content-region hide">
         <h2>Home</h2>
         <h1>Hi, I'm Gloria</h1>
         <p>Welcome to my personal portfolio.</p>
       </div>
 
+      <!-- EXPERIENCE SECTION -->
       <div id="experience" class="content-region hide">
         <h2>Experience</h2>
         <p>
           I am currently a <strong>PhD student</strong> in the group of <strong>Elisa Ricci</strong> at the <strong>University of Trento</strong>.
-          My research focuses on <strong>sign language video generation</strong>, <strong>human motion generation</strong>, and more broadly on 
+          My research focuses on <strong>sign language video generation</strong>, <strong>human motion generation</strong>, and 
           <strong>video synthesis and machine learning for human-centered AI</strong>.
         </p>
-
         <h3>Core Competencies</h3>
         <ul>
           <li><strong>Programming & Tools:</strong> Python, C++, R, Bash, MySQL, LATEX, PyTorch, Scikit-learn, Numpy, Matplotlib, Linux.</li>
@@ -56,106 +58,90 @@
         </ul>
       </div>
 
+      <!-- PORTFOLIO SECTION -->
       <div id="portfolio" class="content-region hide">
         <h2>Portfolio</h2>
-        <p>Here are some of the most significant academic and personal projects I've worked on:</p>
+        <p>Here are some of the most significant projects I've worked on:</p>
         <ul>
-          <li><strong>GAN Music Generator</strong> – Symbolic music generation inspired by MIDINet.</li>
-          <li><strong>RAG on Ulysses</strong> – LLaMA model enhanced with book-based retrieval.</li>
-          <li><strong>Competing Hidden Units</strong> – Biologically plausible learning dynamics.</li>
-          <li><strong>Bayesian Optimization</strong> – Applied to ML models and simulations.</li>
-          <li><strong>COVID-19 Hesitancy Simulation</strong> – SIRV on Barabási-Albert networks.</li>
-          <li><strong>Neural Style Transfer</strong> – Gatys-based visual synthesis.</li>
-          <li><strong>K-Means Parallel Clustering</strong> – PySpark implementation.</li>
-          <li><strong>HMMs for Protein Dynamics</strong> – Hidden state reconstruction.</li>
-          <li><strong>Restricted Boltzmann Machines</strong> – CD training for categorical data.</li>
-          <li><strong>2D Ising Model Simulation</strong> – Glauber, Wolff, and parallel tempering.</li>
+          <li><strong>GAN Music Generator</strong></li>
+          <li><strong>RAG on Ulysses</strong></li>
+          <li><strong>Competing Hidden Units</strong></li>
+          <li><strong>Bayesian Optimization</strong></li>
+          <li><strong>COVID-19 Hesitancy Simulation</strong></li>
+          <li><strong>Neural Style Transfer</strong></li>
+          <li><strong>K-Means Parallel Clustering</strong></li>
+          <li><strong>HMMs for Protein Dynamics</strong></li>
+          <li><strong>Restricted Boltzmann Machines</strong></li>
+          <li><strong>2D Ising Model Simulation</strong></li>
         </ul>
       </div>
 
+      <!-- CONTACT SECTION -->
       <div id="contact" class="content-region hide">
         <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email or connect on LinkedIn and GitHub.</p>
         <ul>
           <li><strong>Email:</strong> <a href="mailto:gloria.isotton@studenti.unipd.it">gloria.isotton@studenti.unipd.it</a></li>
-         <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gloria-isotton-606668304/" target="_blank">gloriaisotton</a></li>
-         <li><strong>GitHub:</strong> <a href="https://github.com/isottongloria" target="_blank">github repo</a></li>
-</ul>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/gloria-isotton-606668304/" target="_blank">gloriaisotton</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/isottongloria" target="_blank">github repo</a></li>
+        </ul>
+      </div>
+
+      <!-- QUIZ SECTION -->
+      <div id="quiz" class="content-region hide">
+        <h2>Quiz</h2>
+
+        <form id="quiz-form">
+          <div class="question">
+            <p><strong>1. Qual è il tuo background?</strong></p>
+            <label><input type="radio" name="q1" value="informatica"> Informatica</label><br>
+            <label><input type="radio" name="q1" value="fisica"> Fisica</label><br>
+            <label><input type="radio" name="q1" value="altro"> Altro</label>
+          </div>
+
+          <div class="question">
+            <p><strong>2. Quanto conosci il machine learning?</strong></p>
+            <label><input type="radio" name="q2" value="principiante"> Principiante</label><br>
+            <label><input type="radio" name="q2" value="intermedio"> Intermedio</label><br>
+            <label><input type="radio" name="q2" value="avanzato"> Avanzato</label>
+          </div>
+
+          <button type="submit">Invia</button>
+        </form>
+
+        <p id="status"></p>
+      </div>
+
+    </div>
+  </div>
 </div>
-
-<div id="quiz" class="content-region hide">
-<h2>Quiz Page</h2>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link href="style.css" rel="stylesheet" />
-</head>
-
-
-<body>
-<h1>Quiz</h1>
-<p>Rispondi alle domande qui sotto:</p>
-
-
-<form id="quiz-form">
-<div class="question">
-<p><strong>1. Qual è il tuo background?</strong></p>
-<label><input type="radio" name="q1" value="informatica"> Informatica</label><br>
-<label><input type="radio" name="q1" value="fisica"> Fisica</label><br>
-<label><input type="radio" name="q1" value="altro"> Altro</label>
-</div>
-
-
-<div class="question">
-<p><strong>2. Quanto conosci il machine learning?</strong></p>
-<label><input type="radio" name="q2" value="principiante"> Principiante</label><br>
-<label><input type="radio" name="q2" value="intermedio"> Intermedio</label><br>
-<label><input type="radio" name="q2" value="avanzato"> Avanzato</label>
-</div>
-
-
-<button type="submit">Invia</button>
-</form>
-
-
-<p id="status"></p>
-
-
-<script>
-document.getElementById("quiz-form").addEventListener("submit", function(e){
-e.preventDefault();
-
-
-const formData = new FormData(e.target);
-const data = Object.fromEntries(formData.entries());
-
-
-fetch("save_answers.php", {
-method: "POST",
-headers: { "Content-Type": "application/json" },
-body: JSON.stringify(data)
-})
-.then(r => r.text())
-.then(response => {
-document.getElementById("status").innerText = response;
-})
-.catch(() => {
-document.getElementById("status").innerText = "Errore nell'invio.";
-});
-});
-</ul>
-</div>
-      
-</div>
-</div>
-</div>
-
 
 <footer>
-Footer region
+  Footer region
 </footer>
-
 
 <script type="text/javascript" src="script.js"></script>
 
+<script>
+document.getElementById("quiz-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData.entries());
+
+  fetch("save_answers.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+  })
+  .then(r => r.text())
+  .then(response => {
+      document.getElementById("status").innerText = response;
+  })
+  .catch(() => {
+      document.getElementById("status").innerText = "Errore nell'invio.";
+  });
+});
+</script>
 
 </body>
 </html>
