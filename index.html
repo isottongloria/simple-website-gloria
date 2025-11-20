@@ -118,30 +118,3 @@
 <footer>
   Footer region
 </footer>
-
-<script type="text/javascript" src="script.js"></script>
-
-<script>
-document.getElementById("quiz-form").addEventListener("submit", function(e){
-  e.preventDefault();
-
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData.entries());
-
-  fetch("save_answers.php", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data)
-  })
-  .then(r => r.text())
-  .then(response => {
-      document.getElementById("status").innerText = response;
-  })
-  .catch(() => {
-      document.getElementById("status").innerText = "Errore nell'invio.";
-  });
-});
-</script>
-
-</body>
-</html>
